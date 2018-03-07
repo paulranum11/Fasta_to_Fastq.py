@@ -40,7 +40,7 @@ with open(sys.argv[1]) as fq, open(sys.argv[2]) as fa:
 
     for fq_line in fq:
         if "read" in fq_line:
-            ID = fq_line[1:6]
+            ID = fq_line[1:13]
             fa.seek(0)
             for fa_line in fa:
                 if ID in fa_line:
